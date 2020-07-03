@@ -57,8 +57,6 @@ EOT
 
 variable "do_token" {}
 
-variable "pushgateway" {}
-
 provider "digitalocean" {
   token = "${var.do_token}"
 }
