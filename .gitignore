@@ -1,3 +1,5 @@
 terraform.tfstate
 .terraform/
 terraform.tfvars
+myplan
+terraform.tfstate.backup

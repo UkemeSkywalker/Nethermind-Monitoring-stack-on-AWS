@@ -32,8 +32,8 @@ resource "digitalocean_droplet" "nethermind-client" {
       "git clone https://github.com/NethermindEth/metrics-infrastructure.git",
       "cp -r metrics-infrastructure/grafana metrics-infrastructure/prometheus .",
       "export HOST=$(curl ifconfig.me)",
-      "export NAME=Nethermind node on ${var.config}",
-      "sed -i '10s/.*/            - NETHERMIND_INITCONFIG_CONFIG=${var.config}/' docker-compose.yaml",
+      "export NAME=\"Nethermind node on ${var.config}\"",
+      "sed -i '10s/.*/            - NETHERMIND_CONFIG=${var.config}/' docker-compose.yaml",
       "sed -i '11s/.*/            - NETHERMIND_JSONRPCCONFIG_ENABLED=${var.rpc_enabled}/' docker-compose.yaml",
       "sed -i '36s/.*/            <target xsi:type=\"Seq\" serverUrl=\"'\"http:\\/\\/$HOST:5341\"'\" apiKey=\"Test\">/' NLog.config",
       "docker-compose up -d"
