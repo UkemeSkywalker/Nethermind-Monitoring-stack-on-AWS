@@ -10,8 +10,6 @@ variable "prefix" {
   default = "nethermind"
 }
 
-variable "ssh_fingerprint" {}
-
 # variable "client_count" {
 #   description = "Number of Nethermind clients which will be running on each VM (e.g. --scale nethermind=5)"
 #   type = number
