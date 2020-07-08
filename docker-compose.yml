@@ -3,7 +3,7 @@ version: "3.5"
 services:
 
     nethermind:
-        image: nethermind/nethermind:alpine
+        image: nethermind/nethermind:latest
         restart: unless-stopped
         container_name: nethermind
         environment: 

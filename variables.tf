@@ -16,12 +16,12 @@ variable "prefix" {
 # }
 
 variable "config" {
-  description = "Chain on which Nethermind will be running (mainnet by default)"
+  description = "Chain on which Nethermind will be running"
   type = string
 }
 
 variable "rpc_enabled" {
-  description = "Specify whether JSON RPC should be enabled (false by default)"
+  description = "Specify whether JSON RPC should be enabled"
   type = bool
 }
 
