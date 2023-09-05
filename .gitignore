@@ -3,3 +3,8 @@ terraform.tfstate
 terraform.tfvars
 myplan
 terraform.tfstate.backup
+awscliv2.zip
+Nethermind-Node
+Nethermind-Node.pem
+NethermindNode
+aws
